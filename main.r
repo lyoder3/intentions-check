@@ -2,7 +2,7 @@ library(googlesheets4);
 library(tidyverse);
 library(data.table);
 
-intentions <- read_sheet("https://docs.google.com/spreadsheets/d/11wpClbQmaQ_TKMd47ORzAF3BqxCrVaL6d1MQdUeUobQ/edit#gid=1441439293")
+intentions <- read_sheet("intentions_sheet_url")
 
 intentions <- select(intentions, "Farm Name", "Field", "Actual Variety", "PLANTED ACRES", "Planter Operator","Planting Date", "LOT NUMBER")
 
